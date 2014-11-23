@@ -1,0 +1,285 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #666666;
+    background: #bbe2f1 url("../img/body.gif") repeat-x;
+}
+
+input[type="text"], input[type="password"]
+{
+    height: 20px;
+    margin: 0px;
+    padding: 0px 4px 0px 4px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #c0c0c0;
+}
+
+input[type="checkbox"]
+{
+    margin: 0px 3px 0px 0px;
+    padding: 0px;
+}
+
+input[type="file"]
+{
+    height: 20px;
+    margin: 0px;
+    padding: 0px 4px 0px 4px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+select
+{
+    height: 22px;
+    margin: 0px;
+    padding: 2px 2px 2px 2px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #c0c0c0;
+}
+
+input[type="submit"], input[type="button"]
+{
+    height: 22px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+textarea
+{
+    margin: 0px;
+    padding: 4px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #c0c0c0;
+}
+
+form
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.error
+{
+    color: red;
+    font-weight: bold;
+}
+
+.red
+{
+    color: red;
+}
+
+.gray
+{
+    color: #c0c0c0;
+}
+
+a:link, a:visited, a:active
+{
+    color: #26499d;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #00bfff;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.wrap
+{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 0px 0px 0px 0px;
+    min-height: 100%;
+    background-color: #f7fcfe;
+}
+
+.container
+{
+    margin: 0px;
+    padding: 0px 5px 0px 5px;
+}
+
+.box
+{
+    border: 1px solid #c0c0c0;
+    background-color: #eaf4fc;
+}
+
+.header
+{
+    width: 1000px;
+    height: 40px;
+    color: #bbdbf3;
+    background: #bbe2f1 url("../img/header.gif") repeat-x;
+}
+
+.headerTitle
+{
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header a:link, .header a:visited, .header a:active
+{
+    color: #a4c1d7;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header a:hover
+{
+    color: #e6eae6;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.navigation
+{
+    width: 1000px;
+    height: 24px;
+    background-color: #ebf6f7;
+}
+
+.message
+{
+    width: 1000px;
+    height: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+.font16
+{
+    font-size: 16px;
+}
+
+table td
+{
+    word-break: break-all;
+}
+
+.tableStyle
+{
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top:1px solid #c0c0c0;
+    border-left:1px solid #c0c0c0;
+}
+
+.tableStyle td
+{
+    /* for firefox bug */
+    /*border: 1px solid #c0c0c0;*/
+    border-right:1px solid #c0c0c0;
+    border-bottom:1px solid #c0c0c0;
+}
+
+.tableNone td
+{
+    border: none;
+}
+
+.tableHeader
+{
+    background-color: #778899;
+    color: #ffffff;
+}
+
+.tableHeader a:link, .tableHeader a:visited, .tableHeader a:active
+{
+    color: #ffffff;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.bgTableHeader a:hover
+{
+    color: #dcdcdc;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.tableContent
+{
+    background-color: #ffffff;
+}
+
+.tableContent2
+{
+    background-color: #ffffe0;
+}
+
+.tableContent td, .tableContent2 td
+{
+    padding: 2px 5px 2px 5px;
+}
+
+.result
+{
+  width: 350px;
+  height: 100px;
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  background-color: #ffffe0;
+}
+
+.imageBorder
+{
+  border: 1px solid #c0c0c0;
+}
+
+.borderBottom
+{
+    border-bottom:1px solid #c0c0c0;
+}
+
+.printBack
+{
+    background: #ffffff;
+}
+
+.tablePrint td
+{
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+}
+
+.tablePrintInner td
+{
+    padding: 1px 0px 1px 0px;
+    border: none;
+}
+
+.changeSort a:link, .changeSort a:visited, .changeSort a:active, .changeSort a:hover
+{
+    text-decoration: none;
+}
+
+
+
