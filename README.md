@@ -1,26 +1,26 @@
-rss
-===
+# rss
 
 Read, store and search RSS.
 
 
+## Summary
 
-The Project
------------
+1. Read RSS (RSS1.0) every 5 minuts using Cron, and store in the database (MySQL)
+    * URL format: http://(user name).abcd(server no).test.com/efgh(entry no).html
+    * Delete the data 3 days ago
 
-1. Read RSS (RSS1.0) every 5 minuts using cron, and store in the database (MySQL).
-   URL format: http://(user name).abcd(server no).test.com/efgh(entry no).html
+2. Create web page which can search the RSS data
+    * Criteria: date, URL, user name, server no, entry no, title
+    * Display: date, URL, title, description
+    * Have pager function
+    * Stored criteria in cookie for next visit
 
-2. Create web page which can search the RSS data.
 
-
-
-Implementation Procedure
-------------------------
+## Implementation
 
 1. Create Table on Database
-    A. Connect to MySql
-    B. Command create table and columns
+    1. Connect to MySql
+    2. Command create table and columns
         CREATE TABLE Rss (
         RssID int NOT NULL AUTO_INCREMENT,
         Date datetime,
@@ -35,18 +35,18 @@ Implementation Procedure
         )
 
 2. Upload Program
-    A. Connect to server
-    B. Check login information in class/database.php
-    C. Upload all folders and files to '/home/xxx/public_html'
+    1. Connect to server
+    2. Check login information in class/database.php
+    3. Upload all folders and files to '/home/xxx/public_html'
 
 3. Set Cron
-    A. Connect to server
-    B. Set Cron
-        a. Command 'crontab -e'
-        b. Hit 'esc' key to change to edit mode
-        c. Hit 'i' key to change to insert mode
-        d. Command '*/5 * * * * /usr/bin/php /home/xxx/public_html/rssUpdate.php'
-        e. Hit 'esc' key to return to edit mode
-        f. Command ':w' to save
-        g. Command ':q' to exit
-        h. Command 'crontab -l' to confirm cron setting
+    1. Connect to server
+    2. Set Cron
+        1. Command 'crontab -e'
+        2. Hit 'esc' key to change to edit mode
+        3. Hit 'i' key to change to insert mode
+        4. Command '*/5 * * * * /usr/bin/php /home/xxx/public_html/rssUpdate.php'
+        5. Hit 'esc' key to return to edit mode
+        6. Command ':w' to save
+        7. Command ':q' to exit
+        8. Command 'crontab -l' to confirm cron setting
