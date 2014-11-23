@@ -5,7 +5,7 @@ Read, store and search RSS.
 
 ## Summary
 
-1. Read RSS (RSS1.0) every 5 minuts using Cron, and store in the database (MySQL)
+1. Read RSS (RSS1.0) every 5 minutes using Cron, and store in the database (MySQL)
     * URL format: http://(user name).abcd(server no).test.com/efgh(entry no).html
     * Delete the data 3 days ago
 
@@ -20,7 +20,7 @@ Read, store and search RSS.
 
 1. Create Table on Database
     1. Connect to MySql
-    2. Command create table and columns
+    2. Command create table and columns:
         CREATE TABLE Rss (
         RssID int NOT NULL AUTO_INCREMENT,
         Date datetime,
