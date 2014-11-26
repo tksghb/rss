@@ -5,15 +5,16 @@ Read, store and search RSS.
 
 ## Summary
 
-1. Read RSS (RSS1.0) every 5 minutes using Cron, and store in the database (MySQL)
+1. Read RSS (RSS1.0) every 5 minutes using Cron, and store it in the database (MySQL)
     * URL format: http://(user name).abcd(server no).test.com/efgh(entry no).html
     * Delete the data 3 days ago
 
-2. Create web page which can search the RSS data
+2. Search the RSS data on web page
     * Criteria: date, URL, user name, server no, entry no, title
     * Display: date, URL, title, description
     * Have pager function
     * Stored criteria in cookie for next visit
+    * Separate PHP from HTML without template and framework
 
 
 ## Implementation
